@@ -10,8 +10,7 @@ import UIKit
 @MainActor
 
 extension ItemDisplaying {
-    func configure(for item: StoreItem, storeItemController:
-                   StoreItemController) async {
+    func configure(for item: StoreItem, storeItemController: StoreItemController) async {
         titleLabel.text = item.name
         detailLabel.text = item.artist
         itemImageView.image = UIImage(systemName: "photo")
@@ -22,7 +21,6 @@ extension ItemDisplaying {
             self.itemImageView.image = image
         } catch let error as NSError where error.domain ==
                     NSURLErrorDomain && error.code == NSURLErrorCancelled {
-            // Ignore cancellation errors
         } catch {
             self.itemImageView.image = UIImage(systemName: "photo")
             print("Error fetching image: \(error)")

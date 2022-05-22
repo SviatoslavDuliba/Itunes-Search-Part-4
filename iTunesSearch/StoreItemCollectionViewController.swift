@@ -13,11 +13,10 @@ class StoreItemCollectionViewController: UICollectionViewController {
                                                heightDimension: .fractionalWidth(0.5))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 3)
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8,
-                                                        bottom: 8, trailing: 8)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
         section.interGroupSpacing = 8
-        collectionView.collectionViewLayout =
-        UICollectionViewCompositionalLayout(section: section)
+        
+        collectionView.collectionViewLayout = UICollectionViewCompositionalLayout(section: section)
     }
 }
 

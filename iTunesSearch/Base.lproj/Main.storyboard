@@ -177,20 +177,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="108" height="166"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="gyi-5G-VdC">
-                                            <rect key="frame" x="-2" y="0.0" width="112" height="166.66666666666666"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gyi-5G-VdC">
+                                            <rect key="frame" x="-2" y="0.0" width="112" height="160.66666666666666"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tvi-QR-q4q">
                                                     <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwa-r3-Z3P">
-                                                    <rect key="frame" x="0.0" y="118.99999999999999" width="112" height="20.333333333333329"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwa-r3-Z3P">
+                                                    <rect key="frame" x="0.0" y="116" width="112" height="20.333333333333343"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m9-FQ-Xbk">
-                                                    <rect key="frame" x="0.0" y="146.33333333333334" width="112" height="20.333333333333343"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m9-FQ-Xbk">
+                                                    <rect key="frame" x="0.0" y="140.33333333333334" width="112" height="20.333333333333343"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -198,6 +198,12 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="gyi-5G-VdC" secondAttribute="bottom" constant="5.3300000000000001" id="PR2-la-aj3"/>
+                                        <constraint firstItem="gyi-5G-VdC" firstAttribute="top" secondItem="92U-BV-JB9" secondAttribute="top" id="UQi-BW-cLd"/>
+                                        <constraint firstAttribute="trailing" secondItem="gyi-5G-VdC" secondAttribute="trailing" constant="-2" id="fDB-hG-xqu"/>
+                                        <constraint firstItem="gyi-5G-VdC" firstAttribute="leading" secondItem="92U-BV-JB9" secondAttribute="leading" constant="-2" id="s11-0z-3ya"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="detailLabel" destination="1m9-FQ-Xbk" id="HPd-8D-DMR"/>
