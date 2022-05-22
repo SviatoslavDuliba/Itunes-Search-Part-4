@@ -20,21 +20,18 @@ class StoreItemController {
         
         let decoder = JSONDecoder()
         let searchResponse = try decoder.decode(SearchResponse.self, from: data)
-
         return searchResponse.results
     }
     
     func fetchImage(from url: URL) async throws -> UIImage {
         let (data, response) = try await URLSession.shared.data(from: url)
-        
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw StoreItemError.imageDataMissing
         }
-
+        
         guard let image = UIImage(data: data) else {
             throw StoreItemError.imageDataMissing
         }
-        
         return image
     }
 }
