@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct StoreItem: Codable {
+struct StoreItem: Codable, Hashable {
     let name: String
     let artist: String
     var kind: String

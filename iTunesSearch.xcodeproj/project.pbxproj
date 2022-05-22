@@ -18,6 +18,8 @@
 		18A6053323CF9ADA002037CA /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6053223CF9ADA002037CA /* ItemTableViewCell.swift */; };
 		18A6053523CFABBB002037CA /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6053423CFABBB002037CA /* StoreItem.swift */; };
 		18A6053723CFABDC002037CA /* StoreItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6053623CFABDC002037CA /* StoreItemController.swift */; };
+		49FC6F03283A766600158375 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC6F02283A766600158375 /* ItemCollectionViewCell.swift */; };
+		49FC6F05283AA3F900158375 /* ItemDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC6F04283AA3F900158375 /* ItemDisplaying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		18A6053223CF9ADA002037CA /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		18A6053423CFABBB002037CA /* StoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItem.swift; sourceTree = "<group>"; };
 		18A6053623CFABDC002037CA /* StoreItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemController.swift; sourceTree = "<group>"; };
+		49FC6F02283A766600158375 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		49FC6F04283AA3F900158375 /* ItemDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDisplaying.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +72,11 @@
 			children = (
 				18A6052A23CF9803002037CA /* Info.plist */,
 				18A6051C23CF9802002037CA /* AppDelegate.swift */,
-				18A6053223CF9ADA002037CA /* ItemTableViewCell.swift */,
 				18A6051E23CF9802002037CA /* SceneDelegate.swift */,
+				49FC6F04283AA3F900158375 /* ItemDisplaying.swift */,
 				18A6053423CFABBB002037CA /* StoreItem.swift */,
+				18A6053223CF9ADA002037CA /* ItemTableViewCell.swift */,
+				49FC6F02283A766600158375 /* ItemCollectionViewCell.swift */,
 				18A6053623CFABDC002037CA /* StoreItemController.swift */,
 				18A6053023CF9829002037CA /* StoreItemListTableViewController.swift */,
 				1812E9A223F36978009BBFA7 /* StoreItemCollectionViewController.swift */,
@@ -155,6 +161,8 @@
 				18A6053323CF9ADA002037CA /* ItemTableViewCell.swift in Sources */,
 				1812E9A323F36978009BBFA7 /* StoreItemCollectionViewController.swift in Sources */,
 				18A6053523CFABBB002037CA /* StoreItem.swift in Sources */,
+				49FC6F03283A766600158375 /* ItemCollectionViewCell.swift in Sources */,
+				49FC6F05283AA3F900158375 /* ItemDisplaying.swift in Sources */,
 				18A6053723CFABDC002037CA /* StoreItemController.swift in Sources */,
 				18A6053123CF9829002037CA /* StoreItemListTableViewController.swift in Sources */,
 				18A6051D23CF9802002037CA /* AppDelegate.swift in Sources */,
